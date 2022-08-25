@@ -5,14 +5,13 @@
 }
 #header {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     background-color: #f79617;
     justify-content: space-between;
     padding: 10px 100px;
-    margin-bottom: 5px;
     align-items: center;
 }
-li {
+.nav li {
     list-style: none;
     padding: 0 0 0 40px ;
 }
@@ -23,9 +22,10 @@ a {
 }
 ul {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
 }
 #frontPage {
+    margin-top: 5px;
     background-image: url("/images/hero-image.jpg");
     background-size: cover;
     width: 100%;
@@ -56,14 +56,14 @@ ul {
     font-size: 35px;
     margin: 0 0 20px 0;
 }
-#foodText {
+.foodText {
     font-size: 30px;
     margin-bottom: 30px;
 }
 .images {
     margin-top: 30px;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 #secondPage img {
@@ -79,17 +79,17 @@ ul {
 .imageOne {
     display: flex;
     align-items: center;
-    flex-flow: column;
+    flex-flow: column wrap;
 }
 .imageTwo {
     display: flex;
     align-items: center;
-    flex-flow: column;
+    flex-flow: column wrap;
 }
 .imageThree {
     display: flex;
     align-items: center;
-    flex-flow: column;
+    flex-flow: column wrap;
 }
 #thirdPage h1 {
     font-size: 35px;
@@ -112,13 +112,13 @@ ul {
 }
 .imagesOne {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     height: 250px;
 }
 .faj {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
     background-image: url(/images/fajita-peppers.jpeg);
@@ -129,7 +129,7 @@ ul {
 .Ree {
     transition: 0.2s;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
     background-image: url(/images/muffins.jpeg);
@@ -139,7 +139,7 @@ ul {
 .egg {
     transition: 0.2s;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
     background-image: url(/images/eggplant-parmesan.jpg);
@@ -149,7 +149,7 @@ ul {
 .ter {
     transition: 0.2s;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
     background-image: url(/images/teriyaki-chicken.jpeg);
@@ -176,7 +176,7 @@ ul {
     background-color: #f79617;
     padding: 0 100px;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -190,6 +190,7 @@ ul {
     cursor: pointer;
     transition: 0.2s;
     transform: translateY(-10px);
+    box-shadow: 2px 9px 12px -3px rgba(0,0,0,0.75);
 }
 .hoverTwo:hover {
     cursor: pointer;
@@ -198,19 +199,187 @@ ul {
     cursor:pointer;
     transform: translateY(-10px);
     transition: 0.2s;
+    box-shadow: 2px 9px 12px -3px rgba(0,0,0,0.75);
 }
 .Ree:hover{
     cursor:pointer;
     transform: translateY(-10px);
     transition: 0.2s;
+    box-shadow: 2px 9px 12px -3px rgba(0,0,0,0.75);
 }
 .egg:hover{
     cursor:pointer;
     transform: translateY(-10px);
     transition: 0.2s;
+    box-shadow: 2px 9px 12px -3px rgba(0,0,0,0.75);
 }
 .ter:hover{
     cursor:pointer;
     transform: translateY(-10px);
     transition: 0.2s;
+    box-shadow: 2px 9px 12px -3px rgba(0,0,0,0.75);
+}
+
+
+
+#Recipe {
+    background-image: url("/images/burger.jpg");
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.textContainerRecipe {
+    width: 40%;
+    display: flex;
+    align-self: center;
+    align-items: flex-end;
+    justify-content: center;
+    height: 80%;
+}
+.textContainerRecipe h1 {
+    background-color: white;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 35px;
+    width: 547px;
+    text-align: center;
+}
+#making ul li {
+    list-style: disc;
+}
+#making {
+    display: flex;
+}
+#time {
+    background-color: rgb(191, 204, 215);
+    padding-top: 30px;
+    padding: 30px 100px;
+}
+#time h1 {
+    padding-bottom: 20px;
+}
+.container {
+    display: flex;
+    height: 60px;
+    width: 1200px;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+.container p {
+    font-size: 20px;
+}
+#mainPage {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#mainPage h1 {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.reviews {
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+#star {
+    color:#941b25;
+    font-size: 22px;
+    padding-right: 15px;
+}
+.save {
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.save p {
+    padding-right: 10px;
+    padding: 10px 40px;
+    font-size: 18px;
+    margin-right: 20px;
+    background-color: #941b25;
+    color: white;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+.save p:hover {
+    cursor: pointer;
+    background-color: #b1333d;
+    transition: 0.2s;
+}
+.save svg {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 100px;
+}
+.save svg:hover{
+    cursor: pointer;
+    color: lightslategray;
+    border: 1px solid lightslategray;
+}
+#quote {
+    background-color: rgb(234, 234, 234);
+    font-size: 15px;
+    width: 55%;
+    padding:  40px 90px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(61, 61, 61);
+}
+#making {
+    width: 65%;
+    margin: 0 auto;
+}
+#ingList {
+    display: flex;
+    flex-flow: column wrap;
+}
+.ingredients {
+    width: 1300px;
+    margin-right: 150px;
+}
+.ingredients h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.ingredients h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+#ingList li {
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+.bigList {
+    margin-bottom: 150px;
+}
+#spimix li {
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+.directions h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.dir li {
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
+#bold {
+    list-style: none;
+    font-weight: 900;
+    padding-bottom: 3px;
 }
