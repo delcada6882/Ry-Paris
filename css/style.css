@@ -26,7 +26,7 @@ ul {
 }
 #frontPage {
     margin-top: 5px;
-    background-image: url("./images/hero-image.jpg");
+    background-image: url("../images/hero-image.jpg");
     background-size: cover;
     width: 100%;
     height: 660px;
@@ -121,7 +121,7 @@ ul {
     flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
-    background-image: url(./images/fajita-peppers.jpeg);
+    background-image: url(../images/fajita-peppers.jpeg);
     background-size: 110%;
     background-position: center top;
     transition: 0.2s;
@@ -132,7 +132,7 @@ ul {
     flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
-    background-image: url(./images/muffins.jpeg);
+    background-image: url(../images/muffins.jpeg);
     background-size: 100%;
     background-position: top;
 }
@@ -142,7 +142,7 @@ ul {
     flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
-    background-image: url(./images/eggplant-parmesan.jpg);
+    background-image: url(../images/eggplant-parmesan.jpg);
     background-size: 100%;
     background-position: center top;
 }
@@ -152,7 +152,7 @@ ul {
     flex-flow: row wrap;
     align-items: flex-end;
     justify-content: center;
-    background-image: url(./images/teriyaki-chicken.jpeg);
+    background-image: url(../images/teriyaki-chicken.jpeg);
     background-size: 100%;
     background-position: center top;
 }
@@ -223,7 +223,7 @@ ul {
 
 
 #Recipe {
-    background-image: url("./images/burger.jpg");
+    background-image: url("../images/burger.jpg");
     background-size: 100%;
     background-position: center;
     width: 100%;
